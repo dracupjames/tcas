@@ -1,0 +1,18 @@
+[project]
+name = "tcas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = ["pytest>=9.0.2", "pytest-html>=4.2.0", "pytest-sugar>=1.1.1"]
+
+[dependency-groups]
+dev = ["ruff>=0.15.1"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--junitxml=reports/test.xml",
+    "--html=reports/pytest_html/index.html",
+    "--self-contained-html",
+]
