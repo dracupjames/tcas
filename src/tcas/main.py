@@ -10,17 +10,16 @@ def own_above_threat(state: State) -> bool:
     return state.other_tracked_altitude < state.own_tracked_altitude
 
 
-# --- RA threshold logic ---
 def positive_ra_alt_thresh(state: State, layer: int) -> int:
-    if layer == 0:
-        return state.positive_ra_alt_thresh_0
-    elif layer == 1:
-        return state.positive_ra_alt_thresh_1
-    elif layer == 2:
-        return state.positive_ra_alt_thresh_2
-    elif layer == 3:
-        return state.positive_ra_alt_thresh_3
-    return 0
+    # Using a dictionary for a clean, strict mapping
+    thresholds = {
+        0: state.positive_ra_alt_thresh_0,
+        1: state.positive_ra_alt_thresh_1,
+        2: state.positive_ra_alt_thresh_2,
+        3: state.positive_ra_alt_thresh_3,
+    }
+    # .get() allows for a default (0) if the layer isn't found
+    return thresholds.get(layer, 0)
 
 
 def alim(state: State) -> int:
@@ -33,8 +32,7 @@ def inhibit_biased_climb(state: State) -> int:
 
 def non_crossing_biased_climb(state: State) -> bool:
     if inhibit_biased_climb(state) > state.down_separation:
-        return (not own_below_threat(state)) or (
-            own_below_threat(state) and not (state.down_separation >= alim(state))
+        return (not own_below_threat(state) and (state.down_separation > alim(state))
         )
     else:
         return (
@@ -42,6 +40,15 @@ def non_crossing_biased_climb(state: State) -> bool:
             and (state.current_vertical_sep >= 300)
             and (state.up_separation >= alim(state))
         )
+# def non_crossing_biased_climb(state: State) -> bool:
+#     if inhibit_biased_climb(state) > state.down_separation:
+#         # If there is no threat below, or if there is a threat but separation is low
+#         return not (own_below_threat(state) and state.down_separation >= alim(state))
+#     return (
+#         own_above_threat(state)
+#         and state.current_vertical_sep >= 300
+#         and state.up_separation >= alim(state)
+#     )
 
 
 def non_crossing_biased_descend(state: State) -> bool:

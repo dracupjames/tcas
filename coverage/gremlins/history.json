@@ -1,0 +1,234 @@
+[
+  {
+    "timestamp": "2026-03-30T12:19:29.447413+00:00",
+    "score": 87.21,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 87.21
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 31,
+        "survived": 4
+      },
+      "return": {
+        "total": 14,
+        "survived": 0
+      },
+      "boundary": {
+        "total": 22,
+        "survived": 4
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 18,
+        "survived": 3
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:35:42.281946+00:00",
+    "score": 87.21,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 87.21
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 31,
+        "survived": 4
+      },
+      "return": {
+        "total": 14,
+        "survived": 0
+      },
+      "boundary": {
+        "total": 22,
+        "survived": 4
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 18,
+        "survived": 3
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:38:23.572590+00:00",
+    "score": 87.21,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 87.21
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 31,
+        "survived": 4
+      },
+      "return": {
+        "total": 14,
+        "survived": 0
+      },
+      "boundary": {
+        "total": 22,
+        "survived": 4
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 18,
+        "survived": 3
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:39:57.716150+00:00",
+    "score": 87.36,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 87.36
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 31,
+        "survived": 4
+      },
+      "return": {
+        "total": 15,
+        "survived": 0
+      },
+      "boundary": {
+        "total": 22,
+        "survived": 4
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 18,
+        "survived": 3
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:48:42.924492+00:00",
+    "score": 92.86,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 92.86
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 27,
+        "survived": 2
+      },
+      "return": {
+        "total": 10,
+        "survived": 0
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 18,
+        "survived": 3
+      },
+      "boundary": {
+        "total": 14,
+        "survived": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:54:01.734377+00:00",
+    "score": 95.59,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 95.59
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 27,
+        "survived": 2
+      },
+      "return": {
+        "total": 10,
+        "survived": 0
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 16,
+        "survived": 1
+      },
+      "boundary": {
+        "total": 14,
+        "survived": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:55:33.977868+00:00",
+    "score": 97.06,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 97.06
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 27,
+        "survived": 0
+      },
+      "return": {
+        "total": 10,
+        "survived": 0
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 16,
+        "survived": 2
+      },
+      "boundary": {
+        "total": 14,
+        "survived": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-31T20:57:56.561615+00:00",
+    "score": 100.0,
+    "by_file": {
+      "/Users/jamesdracup/Desktop/tcas/src/tcas/main.py": 100.0
+    },
+    "by_operator": {
+      "comparison": {
+        "total": 27,
+        "survived": 0
+      },
+      "return": {
+        "total": 10,
+        "survived": 0
+      },
+      "arithmetic": {
+        "total": 1,
+        "survived": 0
+      },
+      "boolean": {
+        "total": 16,
+        "survived": 0
+      },
+      "boundary": {
+        "total": 14,
+        "survived": 0
+      }
+    }
+  }
+]
